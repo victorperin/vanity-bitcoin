@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Victor Perin",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "through2-filter": "^2.0.0"
+  }
 }

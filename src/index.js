@@ -3,7 +3,16 @@ const filter = require('through2-filter');
 
 const processBuffer = require('./process-buffer');
 
-const onlyKeys = filter( (chunk) => chunk.toString().includes('Key') );
+const onlyKeys = filter( (chunk) => {
+  const containKey = chunk.includes('Key');
+
+  if(!containKey){
+    process.stdout.clearLine();
+    process.stdout.write(chunk);
+  }
+
+  return containKey;
+});
 
 const text = process.argv[2];
 const vanitygen = spawn('bin/vanitygen', ['-i', '-k', `1${text}`]);

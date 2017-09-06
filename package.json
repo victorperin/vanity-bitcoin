@@ -9,6 +9,7 @@
   "author": "Victor Perin",
   "license": "MIT",
   "dependencies": {
-    "through2-filter": "^2.0.0"
+    "through2-filter": "^2.0.0",
+    "ursa": "^0.9.4"
   }
 }

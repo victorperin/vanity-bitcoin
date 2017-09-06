@@ -5,7 +5,8 @@ const processBuffer = require('./process-buffer');
 
 const onlyKeys = filter( (chunk) => chunk.toString().includes('Key') );
 
-const vanitygen = spawn('bin/vanitygen', ['-i', '-k', '1Perin']);
+const text = process.argv[2];
+const vanitygen = spawn('bin/vanitygen', ['-i', '-k', `1${text}`]);
 vanitygen.stdout
   .pipe(onlyKeys)
   .on('data', processBuffer);

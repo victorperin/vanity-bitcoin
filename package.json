@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "An bitcoin vanity generator using vanitygen and saving to json",
   "main": "index.js",
+  "bin": {
+    "vanitybitcoin": "src/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

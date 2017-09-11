@@ -1,7 +1,7 @@
 {
-  "name": "vanitygen-to-json",
+  "name": "vanity-bitcoin",
   "version": "1.0.0",
-  "description": "An bitcoin vanity generator using vanitygen and saving to json",
+  "description": "An bitcoin vanity generator using vanitygen and saving to a file",
   "main": "index.js",
   "bin": {
     "vanitybitcoin": "src/index.js"

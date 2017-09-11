@@ -17,7 +17,7 @@ const onlyKeys = filter( (chunk) => {
 });
 
 const text = process.argv[2];
-const vanitygen = spawn('bin/vanitygen', ['-i', '-k', `1${text}`]);
+const vanitygen = spawn(`${__dirname}/../bin/vanitygen`, ['-i', '-k', `1${text}`]);
 vanitygen.stdout
   .pipe(onlyKeys)
   .on('data', processBuffer);

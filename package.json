@@ -16,5 +16,14 @@
     "lowdb": "^1.0.0",
     "through2-filter": "^2.0.0",
     "ursa": "^0.9.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorperin/vanity-bitcoin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/victorperin/vanity-bitcoin/issues"
+  },
+  "homepage": "https://github.com/victorperin/vanity-bitcoin#readme"
 }
